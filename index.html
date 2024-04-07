@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+   
+
+        .head {
+            text-align: center;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        #cardHolder {
+            width: 98%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 277px;
+            height: fit-content;
+        }
+
+        .founderImage {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .founderName {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "Open Sans", sans-serif;
+            margin: 0;
+            text-align: center;
+            padding: 8px 8px 0 8px;
+        }
+
+        .founderPosition {
+            color: #544D4F;
+            font-family: "Open Sans", sans-serif;
+            margin: 0;
+            margin: 2px;
+            font-size: 16px;
+            text-align: center;
+            padding: 0 8px;
+        }
+
+        .logo {
+            width: 139px;
+            height: 47px;
+        }
+
+        .logo2 {
+            width: 110px;
+            height: 48px;
+        }
+        
+        .logo3 {
+            width: 139px;
+            height: 48px;
+        }
+
+        .logo4 {
+            width: 111px;
+            height: 48px;
+        }
+
+    </style>
+    <title>Investors Dom</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+</body>
+<script>
+    const root = document.getElementById('root');
+    // creating the heading
+    let heading = document.createElement("h1");
+    heading.textContent = "Strategic Investors"
+    heading.className = "head"
+
+    // creating cards div
+
+    let cardsDiv = document.createElement("div");
+    cardsDiv.id = "cardHolder";
+
+    // --Start--
+
+    // card 1
+    let card1 = document.createElement("div");
+    card1.className = "card";
+    // founderImage creation
+    let founderImage = document.createElement("img");
+    founderImage.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg";
+    founderImage.className = "founderImage";
+    // Name of founder
+    let founderName = document.createElement("p");
+    founderName.className = "founderName";
+    founderName.textContent = "Vijay Shekhar Sharma"
+    // Founder position
+    let founderPosition = document.createElement("p");
+    founderPosition.className = "founderPosition";
+    founderPosition.textContent = "Founder & CEO";
+    // company logo 
+    let companyLogo = document.createElement("img");
+    companyLogo.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"
+    companyLogo.className = "logo";
+
+     // card 2
+     let card2 = document.createElement("div");
+    card2.className = "card";
+    // founderImage creation
+    let founderImage2 = document.createElement("img");
+    founderImage2.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png";
+    founderImage2.className = "founderImage";
+    // Name of founder
+    let founderName2 = document.createElement("p");
+    founderName2.className = "founderName";
+    founderName2.textContent = "Kunal Shah"
+    // Founder position
+    let founderPosition2 = document.createElement("p");
+    founderPosition2.className = "founderPosition";
+    founderPosition2.textContent = "Founder";
+    // company logo 
+    let companyLogo2 = document.createElement("img");
+    companyLogo2.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+    companyLogo2.className = "logo2";
+
+     // card 3
+     let card3 = document.createElement("div");
+    card3.className = "card";
+    // founderImage creation
+    let founderImage3 = document.createElement("img");
+    founderImage3.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg";
+    founderImage3.className = "founderImage";
+    // Name of founder
+    let founderName3 = document.createElement("p");
+    founderName3.className = "founderName";
+    founderName3.textContent = "Amrish Rau"
+    // Founder position
+    let founderPosition3 = document.createElement("p");
+    founderPosition3.className = "founderPosition";
+    founderPosition3.textContent = "CEO";
+    // company logo 
+    let companyLogo3 = document.createElement("img");
+    companyLogo3.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png"
+    companyLogo3.className = "logo3";
+
+     // card 4
+     let card4 = document.createElement("div");
+    card4.className = "card";
+    // founderImage creation
+    let founderImage4 = document.createElement("img");
+    founderImage4.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg";
+    founderImage4.className = "founderImage";
+    // Name of founder
+    let founderName4 = document.createElement("p");
+    founderName4.className = "founderName";
+    founderName4.textContent = "Sampad Swain"
+    // Founder position
+    let founderPosition4 = document.createElement("p");
+    founderPosition4.className = "founderPosition";
+    founderPosition4.textContent = "Co-Founder & CEO";
+    // company logo 
+    let companyLogo4 = document.createElement("img");
+    companyLogo4.src = "https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png"
+    companyLogo4.className = "logo4";
+
+    // --End--
+    
+    // Appending the card items to card div 
+    card1.append(founderImage,founderName,founderPosition,companyLogo);
+    card2.append(founderImage2,founderName2,founderPosition2,companyLogo2);
+    card3.append(founderImage3,founderName3,founderPosition3,companyLogo3);
+    card4.append(founderImage4,founderName4,founderPosition4,companyLogo4);
+
+    // Appending the card div to root
+    cardsDiv.append(card1,card2,card3,card4)
+
+    // Appending the items to root element
+    root.append(heading,cardsDiv)
+</script>
+</html>
